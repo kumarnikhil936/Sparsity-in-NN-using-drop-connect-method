@@ -1,0 +1,15 @@
+Extracting MNIST_data/train-images-idx3-ubyte.gz
+Extracting MNIST_data/train-labels-idx1-ubyte.gz
+Extracting MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
+Epoch: 1 cost =  28.913
+Epoch: 2 cost =  27.763
+Epoch: 3 cost =  27.159
+Epoch: 4 cost =  26.962
+Epoch: 5 cost =  26.521
+Epoch: 6 cost =  26.418
+Epoch: 7 cost =  26.226
+Epoch: 8 cost =  25.983
+Epoch: 9 cost =  25.946
+Epoch: 10 cost =  25.606
+Accuracy = 0.105

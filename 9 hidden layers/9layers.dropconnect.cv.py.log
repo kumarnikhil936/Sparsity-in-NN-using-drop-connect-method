@@ -1,0 +1,2350 @@
+/home/student/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From 9layers.dropconnect.cv.py:17: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From /home/student/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please write your own downloading logic.
+WARNING:tensorflow:From /home/student/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From /home/student/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From /home/student/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:110: dense_to_one_hot (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.one_hot on tensors.
+WARNING:tensorflow:From /home/student/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:290: DataSet.__init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+2018-08-24 12:25:48.351986: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-08-24 12:25:48.410171: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:897] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-08-24 12:25:48.410491: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce GTX 1050 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:01:00.0
+totalMemory: 1.95GiB freeMemory: 1.28GiB
+2018-08-24 12:25:48.410504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:25:48.602675: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:25:48.602712: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:25:48.602719: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:25:48.602876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:26:09.560522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:26:09.560567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:26:09.560589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:26:09.560594: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:26:09.560693: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:26:30.500340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:26:30.500406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:26:30.500414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:26:30.500419: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:26:30.500538: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:26:51.509471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:26:51.509516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:26:51.509537: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:26:51.509542: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:26:51.509633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Extracting MNIST_data/train-images-idx3-ubyte.gz
+Extracting MNIST_data/train-labels-idx1-ubyte.gz
+Extracting MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
+Nodes keep percentage is :  1.0
+** Start training **
+Epoch #0 cost=3.249581
+Epoch #1 cost=3.249575
+Epoch #2 cost=3.249576
+Epoch #3 cost=3.249576
+Epoch #4 cost=3.249576
+Epoch #5 cost=3.249576
+Epoch #6 cost=3.249576
+Epoch #7 cost=3.249576
+Epoch #8 cost=3.249575
+Epoch #9 cost=3.249576
+** Start training **
+Epoch #0 cost=3.249550
+Epoch #1 cost=3.249537
+Epoch #2 cost=3.249535
+Epoch #3 cost=3.249535
+Epoch #4 cost=3.249535
+Epoch #5 cost=3.249534
+Epoch #6 cost=3.249535
+Epoch #7 cost=3.249534
+Epoch #8 cost=3.249534
+Epoch #9 cost=3.249535
+** Start training **
+Epoch #0 cost=3.249588
+Epoch #1 cost=3.249583
+Epoch #2 cost=3.249583
+Epoch #3 cost=3.249583
+Epoch #4 cost=3.249583
+Epoch #5 cost=3.249583
+Epoch #6 cost=3.249583
+Epoch #7 cost=3.249583
+Epoch #8 cost=3.249583
+Epoch #9 cost=3.249583
+** Start training **
+Epoch #0 cost=3.249682
+Epoch #1 cost=3.249711
+Epoch #2 cost=3.249722
+Epoch #3 cost=3.249725
+Epoch #4 cost=3.249726
+Epoch #5 cost=3.249726
+Epoch #6 cost=3.249726
+Epoch #7 cost=3.249726
+Epoch #8 cost=3.249726
+Epoch #9 cost=3.249726
+** Start training **
+Epoch #0 cost=3.249640
+Epoch #1 cost=3.249650
+Epoch #2 cost=3.249655
+Epoch #3 cost=3.249656
+Epoch #4 cost=3.249656
+Epoch #5 cost=3.249656
+Epoch #6 cost=3.249656
+Epoch #7 cost=3.249656
+Epoch #8 cost=3.249656
+Epoch #9 cost=3.249656
+** Start training **
+Epoch #0 cost=3.249621
+Epoch #1 cost=3.249632
+Epoch #2 cost=3.249636
+Epoch #3 cost=3.249638
+Epoch #4 cost=3.249638
+Epoch #5 cost=3.249638
+Epoch #6 cost=3.249638
+Epoch #7 cost=3.249638
+Epoch #8 cost=3.249638
+Epoch #9 cost=3.249638
+** Start training **
+Epoch #0 cost=3.249649
+Epoch #1 cost=3.249661
+Epoch #2 cost=3.249666
+Epoch #3 cost=3.249668
+Epoch #4 cost=3.249668
+Epoch #5 cost=3.249668
+Epoch #6 cost=3.249668
+Epoch #7 cost=3.249668
+Epoch #8 cost=3.249668
+Epoch #9 cost=3.249668
+** Start training **
+Epoch #0 cost=3.249606
+Epoch #1 cost=3.249627
+Epoch #2 cost=3.249636
+Epoch #3 cost=3.249638
+Epoch #4 cost=3.249639
+Epoch #5 cost=3.249639
+Epoch #6 cost=3.249639
+Epoch #7 cost=3.249639
+Epoch #8 cost=3.249639
+Epoch #9 cost=3.249639
+** Start training **
+Epoch #0 cost=3.249505
+Epoch #1 cost=3.249491
+Epoch #2 cost=3.249489
+Epoch #3 cost=3.249488
+Epoch #4 cost=3.249488
+Epoch #5 cost=3.249488
+Epoch #6 cost=3.249488
+Epoch #7 cost=3.249488
+Epoch #8 cost=3.249488
+Epoch #9 cost=3.249488
+** Start training **
+Epoch #0 cost=3.250513
+Epoch #1 cost=3.250792
+Epoch #2 cost=3.250870
+Epoch #3 cost=3.250891
+Epoch #4 cost=3.250896
+Epoch #5 cost=3.250898
+Epoch #6 cost=3.250898
+Epoch #7 cost=3.250898
+Epoch #8 cost=3.250898
+Epoch #9 cost=3.250898
+Nodes keep percentage is :  0.95
+** Start training **
+Epoch #0 cost=3.249636
+Epoch #1 cost=3.249597
+Epoch #2 cost=3.249589
+Epoch #3 cost=3.249586
+Epoch #4 cost=3.249586
+Epoch #5 cost=3.249585
+Epoch #6 cost=3.249585
+Epoch #7 cost=3.249585
+Epoch #8 cost=3.249585
+Epoch #9 cost=3.249585
+** Start training **
+Epoch #0 cost=3.249607
+Epoch #1 cost=3.249562
+Epoch #2 cost=3.249552
+Epoch #3 cost=3.249549
+Epoch #4 cost=3.249548
+Epoch #5 cost=3.249548
+Epoch #6 cost=3.249548
+Epoch #7 cost=3.249548
+Epoch #8 cost=3.249548
+Epoch #9 cost=3.249548
+** Start training **
+Epoch #0 cost=3.249646
+Epoch #1 cost=3.249606
+Epoch #2 cost=3.249598
+Epoch #3 cost=3.249595
+Epoch #4 cost=3.249595
+Epoch #5 cost=3.249595
+Epoch #6 cost=3.249594
+Epoch #7 cost=3.249594
+Epoch #8 cost=3.249594
+Epoch #9 cost=3.249594
+** Start training **
+Epoch #0 cost=3.249740
+Epoch #1 cost=3.249732
+Epoch #2 cost=3.249731
+Epoch #3 cost=3.249731
+Epoch #4 cost=3.249731
+Epoch #5 cost=3.249731
+Epoch #6 cost=3.249730
+Epoch #7 cost=3.249730
+Epoch #8 cost=3.249730
+Epoch #9 cost=3.249731
+** Start training **
+Epoch #0 cost=3.249701
+Epoch #1 cost=3.249672
+Epoch #2 cost=3.249666
+Epoch #3 cost=3.249665
+Epoch #4 cost=3.249664
+Epoch #5 cost=3.249664
+Epoch #6 cost=3.249664
+Epoch #7 cost=3.249664
+Epoch #8 cost=3.249664
+Epoch #9 cost=3.249664
+** Start training **
+Epoch #0 cost=3.249680
+Epoch #1 cost=3.249653
+Epoch #2 cost=3.249648
+Epoch #3 cost=3.249646
+Epoch #4 cost=3.249646
+Epoch #5 cost=3.249645
+Epoch #6 cost=3.249646
+Epoch #7 cost=3.249646
+Epoch #8 cost=3.249646
+Epoch #9 cost=3.249646
+** Start training **
+Epoch #0 cost=3.249712
+Epoch #1 cost=3.249686
+Epoch #2 cost=3.249680
+Epoch #3 cost=3.249678
+Epoch #4 cost=3.249678
+Epoch #5 cost=3.249678
+Epoch #6 cost=3.249678
+Epoch #7 cost=3.249678
+Epoch #8 cost=3.249678
+Epoch #9 cost=3.249678
+** Start training **
+Epoch #0 cost=3.249673
+Epoch #1 cost=3.249650
+Epoch #2 cost=3.249646
+Epoch #3 cost=3.249645
+Epoch #4 cost=3.249644
+Epoch #5 cost=3.249644
+Epoch #6 cost=3.249644
+Epoch #7 cost=3.249644
+Epoch #8 cost=3.249644
+Epoch #9 cost=3.249644
+** Start training **
+Epoch #0 cost=3.249556
+Epoch #1 cost=3.249504
+Epoch #2 cost=3.249493
+Epoch #3 cost=3.249490
+Epoch #4 cost=3.249489
+Epoch #5 cost=3.249489
+Epoch #6 cost=3.249488
+Epoch #7 cost=3.249488
+Epoch #8 cost=3.249488
+Epoch #9 cost=3.249488
+** Start training **
+Epoch #0 cost=3.250574
+Epoch #1 cost=3.250807
+Epoch #2 cost=3.250866
+Epoch #3 cost=3.250881
+Epoch #4 cost=3.250885
+Epoch #5 cost=3.250886
+Epoch #6 cost=3.250886
+Epoch #7 cost=3.250886
+Epoch #8 cost=3.250886
+Epoch #9 cost=3.250886
+Nodes keep percentage is :  0.8999999999999999
+** Start training **
+Epoch #0 cost=3.249724
+Epoch #1 cost=3.249610
+Epoch #2 cost=3.249590
+Epoch #3 cost=3.249585
+Epoch #4 cost=3.249584
+Epoch #5 cost=3.249584
+Epoch #6 cost=3.249584
+Epoch #7 cost=3.249584
+Epoch #8 cost=3.249584
+Epoch #9 cost=3.249584
+** Start training **
+Epoch #0 cost=3.249692
+Epoch #1 cost=3.249573
+Epoch #2 cost=3.249552
+Epoch #3 cost=3.249548
+Epoch #4 cost=3.249546
+Epoch #5 cost=3.249546
+Epoch #6 cost=3.249546
+Epoch #7 cost=3.249546
+Epoch #8 cost=3.249546
+Epoch #9 cost=3.249546
+** Start training **
+Epoch #0 cost=3.249732
+Epoch #1 cost=3.249618
+Epoch #2 cost=3.249599
+Epoch #3 cost=3.249593
+Epoch #4 cost=3.249593
+Epoch #5 cost=3.249592
+Epoch #6 cost=3.249592
+Epoch #7 cost=3.249592
+Epoch #8 cost=3.249592
+Epoch #9 cost=3.249592
+** Start training **
+Epoch #0 cost=3.249838
+Epoch #1 cost=3.249745
+Epoch #2 cost=3.249731
+Epoch #3 cost=3.249727
+Epoch #4 cost=3.249726
+Epoch #5 cost=3.249726
+Epoch #6 cost=3.249726
+Epoch #7 cost=3.249726
+Epoch #8 cost=3.249726
+Epoch #9 cost=3.249726
+** Start training **
+Epoch #0 cost=3.249783
+Epoch #1 cost=3.249681
+Epoch #2 cost=3.249665
+Epoch #3 cost=3.249661
+Epoch #4 cost=3.249660
+Epoch #5 cost=3.249660
+Epoch #6 cost=3.249660
+Epoch #7 cost=3.249660
+Epoch #8 cost=3.249660
+Epoch #9 cost=3.249659
+** Start training **
+Epoch #0 cost=3.249760
+Epoch #1 cost=3.249662
+Epoch #2 cost=3.249646
+Epoch #3 cost=3.249642
+Epoch #4 cost=3.249641
+Epoch #5 cost=3.249641
+Epoch #6 cost=3.249641
+Epoch #7 cost=3.249641
+Epoch #8 cost=3.249641
+Epoch #9 cost=3.249641
+** Start training **
+Epoch #0 cost=3.249808
+Epoch #1 cost=3.249698
+Epoch #2 cost=3.249679
+Epoch #3 cost=3.249675
+Epoch #4 cost=3.249673
+Epoch #5 cost=3.249673
+Epoch #6 cost=3.249673
+Epoch #7 cost=3.249673
+Epoch #8 cost=3.249673
+Epoch #9 cost=3.249673
+** Start training **
+Epoch #0 cost=3.249735
+Epoch #1 cost=3.249654
+Epoch #2 cost=3.249643
+Epoch #3 cost=3.249640
+Epoch #4 cost=3.249639
+Epoch #5 cost=3.249639
+Epoch #6 cost=3.249639
+Epoch #7 cost=3.249639
+Epoch #8 cost=3.249639
+Epoch #9 cost=3.249639
+** Start training **
+Epoch #0 cost=3.249621
+Epoch #1 cost=3.249508
+Epoch #2 cost=3.249489
+Epoch #3 cost=3.249484
+Epoch #4 cost=3.249483
+Epoch #5 cost=3.249482
+Epoch #6 cost=3.249482
+Epoch #7 cost=3.249482
+Epoch #8 cost=3.249482
+Epoch #9 cost=3.249482
+** Start training **
+Epoch #0 cost=3.250170
+Epoch #1 cost=3.250718
+Epoch #2 cost=3.250848
+Epoch #3 cost=3.250877
+Epoch #4 cost=3.250883
+Epoch #5 cost=3.250884
+Epoch #6 cost=3.250885
+Epoch #7 cost=3.250885
+Epoch #8 cost=3.250885
+Epoch #9 cost=3.250885
+Nodes keep percentage is :  0.8499999999999999
+** Start training **
+Epoch #0 cost=3.249221
+Epoch #1 cost=3.249492
+Epoch #2 cost=3.249566
+Epoch #3 cost=3.249583
+Epoch #4 cost=3.249586
+Epoch #5 cost=3.249587
+Epoch #6 cost=3.249587
+Epoch #7 cost=3.249587
+Epoch #8 cost=3.249587
+Epoch #9 cost=3.249587
+** Start training **
+Epoch #0 cost=3.249193
+Epoch #1 cost=3.2494582018-08-24 12:27:12.534512: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:27:12.534559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:27:12.534566: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:27:12.534571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:27:12.534677: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:27:33.506233: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:27:33.506276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:27:33.506283: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:27:33.506287: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:27:33.506390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:27:54.455720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:27:54.455764: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:27:54.455772: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:27:54.455776: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:27:54.455880: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+
+Epoch #2 cost=3.249530
+Epoch #3 cost=3.249547
+Epoch #4 cost=3.249550
+Epoch #5 cost=3.249551
+Epoch #6 cost=3.249552
+Epoch #7 cost=3.249551
+Epoch #8 cost=3.249551
+Epoch #9 cost=3.249551
+** Start training **
+Epoch #0 cost=3.249225
+Epoch #1 cost=3.249499
+Epoch #2 cost=3.249574
+Epoch #3 cost=3.249592
+Epoch #4 cost=3.249595
+Epoch #5 cost=3.249596
+Epoch #6 cost=3.249596
+Epoch #7 cost=3.249596
+Epoch #8 cost=3.249597
+Epoch #9 cost=3.249596
+** Start training **
+Epoch #0 cost=3.249317
+Epoch #1 cost=3.249620
+Epoch #2 cost=3.249701
+Epoch #3 cost=3.249720
+Epoch #4 cost=3.249724
+Epoch #5 cost=3.249725
+Epoch #6 cost=3.249725
+Epoch #7 cost=3.249725
+Epoch #8 cost=3.249725
+Epoch #9 cost=3.249725
+** Start training **
+Epoch #0 cost=3.249271
+Epoch #1 cost=3.249559
+Epoch #2 cost=3.249637
+Epoch #3 cost=3.249655
+Epoch #4 cost=3.249660
+Epoch #5 cost=3.249661
+Epoch #6 cost=3.249661
+Epoch #7 cost=3.249661
+Epoch #8 cost=3.249661
+Epoch #9 cost=3.249661
+** Start training **
+Epoch #0 cost=3.249253
+Epoch #1 cost=3.249542
+Epoch #2 cost=3.249620
+Epoch #3 cost=3.249638
+Epoch #4 cost=3.249642
+Epoch #5 cost=3.249643
+Epoch #6 cost=3.249643
+Epoch #7 cost=3.249643
+Epoch #8 cost=3.249643
+Epoch #9 cost=3.249643
+** Start training **
+Epoch #0 cost=3.249292
+Epoch #1 cost=3.249576
+Epoch #2 cost=3.249653
+Epoch #3 cost=3.249670
+Epoch #4 cost=3.249674
+Epoch #5 cost=3.249675
+Epoch #6 cost=3.249675
+Epoch #7 cost=3.249676
+Epoch #8 cost=3.249675
+Epoch #9 cost=3.249676
+** Start training **
+Epoch #0 cost=3.249222
+Epoch #1 cost=3.249532
+Epoch #2 cost=3.249615
+Epoch #3 cost=3.249634
+Epoch #4 cost=3.249638
+Epoch #5 cost=3.249640
+Epoch #6 cost=3.249640
+Epoch #7 cost=3.249640
+Epoch #8 cost=3.249640
+Epoch #9 cost=3.249640
+** Start training **
+Epoch #0 cost=3.249128
+Epoch #1 cost=3.249390
+Epoch #2 cost=3.249461
+Epoch #3 cost=3.249477
+Epoch #4 cost=3.249480
+Epoch #5 cost=3.249481
+Epoch #6 cost=3.249481
+Epoch #7 cost=3.249481
+Epoch #8 cost=3.249481
+Epoch #9 cost=3.249481
+** Start training **
+Epoch #0 cost=3.250507
+Epoch #1 cost=3.250789
+Epoch #2 cost=3.250855
+Epoch #3 cost=3.250868
+Epoch #4 cost=3.250870
+Epoch #5 cost=3.250871
+Epoch #6 cost=3.250870
+Epoch #7 cost=3.250870
+Epoch #8 cost=3.250870
+Epoch #9 cost=3.250870
+Nodes keep percentage is :  0.7999999999999998
+** Start training **
+Epoch #0 cost=3.249263
+Epoch #1 cost=3.249535
+Epoch #2 cost=3.249593
+Epoch #3 cost=3.249603
+Epoch #4 cost=3.249605
+Epoch #5 cost=3.249606
+Epoch #6 cost=3.249605
+Epoch #7 cost=3.249605
+Epoch #8 cost=3.249605
+Epoch #9 cost=3.249605
+** Start training **
+Epoch #0 cost=3.249259
+Epoch #1 cost=3.249509
+Epoch #2 cost=3.249562
+Epoch #3 cost=3.249572
+Epoch #4 cost=3.249573
+Epoch #5 cost=3.249573
+Epoch #6 cost=3.249573
+Epoch #7 cost=3.249573
+Epoch #8 cost=3.249573
+Epoch #9 cost=3.249573
+** Start training **
+Epoch #0 cost=3.249286
+Epoch #1 cost=3.249547
+Epoch #2 cost=3.249603
+Epoch #3 cost=3.249613
+Epoch #4 cost=3.249614
+Epoch #5 cost=3.249615
+Epoch #6 cost=3.249615
+Epoch #7 cost=3.249615
+Epoch #8 cost=3.249615
+Epoch #9 cost=3.249615
+** Start training **
+Epoch #0 cost=3.249373
+Epoch #1 cost=3.249660
+Epoch #2 cost=3.249721
+Epoch #3 cost=3.249732
+Epoch #4 cost=3.249734
+Epoch #5 cost=3.249735
+Epoch #6 cost=3.249735
+Epoch #7 cost=3.249735
+Epoch #8 cost=3.249735
+Epoch #9 cost=3.249734
+** Start training **
+Epoch #0 cost=3.249330
+Epoch #1 cost=3.249603
+Epoch #2 cost=3.249662
+Epoch #3 cost=3.249672
+Epoch #4 cost=3.249674
+Epoch #5 cost=3.249675
+Epoch #6 cost=3.249675
+Epoch #7 cost=3.249675
+Epoch #8 cost=3.249675
+Epoch #9 cost=3.249675
+** Start training **
+Epoch #0 cost=3.249295
+Epoch #1 cost=3.249581
+Epoch #2 cost=3.249642
+Epoch #3 cost=3.249653
+Epoch #4 cost=3.249655
+Epoch #5 cost=3.249655
+Epoch #6 cost=3.249655
+Epoch #7 cost=3.249655
+Epoch #8 cost=3.249655
+Epoch #9 cost=3.249655
+** Start training **
+Epoch #0 cost=3.249335
+Epoch #1 cost=3.249614
+Epoch #2 cost=3.249675
+Epoch #3 cost=3.249685
+Epoch #4 cost=3.249687
+Epoch #5 cost=3.249688
+Epoch #6 cost=3.249688
+Epoch #7 cost=3.249688
+Epoch #8 cost=3.249687
+Epoch #9 cost=3.249687
+** Start training **
+Epoch #0 cost=3.249289
+Epoch #1 cost=3.249575
+Epoch #2 cost=3.249637
+Epoch #3 cost=3.249648
+Epoch #4 cost=3.249650
+Epoch #5 cost=3.249650
+Epoch #6 cost=3.249650
+Epoch #7 cost=3.249650
+Epoch #8 cost=3.249651
+Epoch #9 cost=3.249651
+** Start training **
+Epoch #0 cost=3.249172
+Epoch #1 cost=3.249419
+Epoch #2 cost=3.249472
+Epoch #3 cost=3.249482
+Epoch #4 cost=3.249483
+Epoch #5 cost=3.249484
+Epoch #6 cost=3.249484
+Epoch #7 cost=3.249484
+Epoch #8 cost=3.249484
+Epoch #9 cost=3.249484
+** Start training **
+Epoch #0 cost=3.250745
+Epoch #1 cost=3.250829
+Epoch #2 cost=3.250856
+Epoch #3 cost=3.250861
+Epoch #4 cost=3.250862
+Epoch #5 cost=3.250863
+Epoch #6 cost=3.250863
+Epoch #7 cost=3.250863
+Epoch #8 cost=3.250863
+Epoch #9 cost=3.250863
+Nodes keep percentage is :  0.7499999999999998
+** Start training **
+Epoch #0 cost=3.250398
+Epoch #1 cost=3.249680
+Epoch #2 cost=3.249635
+Epoch #3 cost=3.249632
+Epoch #4 cost=3.249631
+Epoch #5 cost=3.249631
+Epoch #6 cost=3.249631
+Epoch #7 cost=3.249630
+Epoch #8 cost=3.249631
+Epoch #9 cost=3.249630
+** Start training **
+Epoch #0 cost=3.250366
+Epoch #1 cost=3.249659
+Epoch #2 cost=3.249615
+Epoch #3 cost=3.249612
+Epoch #4 cost=3.249611
+Epoch #5 cost=3.249611
+Epoch #6 cost=3.249611
+Epoch #7 cost=3.249611
+Epoch #8 cost=3.249611
+Epoch #9 cost=3.249611
+** Start training **
+Epoch #0 cost=3.250405
+Epoch #1 cost=3.249691
+Epoch #2 cost=3.249646
+Epoch #3 cost=3.249643
+Epoch #4 cost=3.249643
+Epoch #5 cost=3.249642
+Epoch #6 cost=3.249642
+Epoch #7 cost=3.249643
+Epoch #8 cost=3.249642
+Epoch #9 cost=3.249642
+** Start training **
+Epoch #0 cost=3.250499
+Epoch #1 cost=3.249770
+Epoch #2 cost=3.249724
+Epoch #3 cost=3.249721
+Epoch #4 cost=3.249720
+Epoch #5 cost=3.249720
+Epoch #6 cost=3.249720
+Epoch #7 cost=3.249720
+Epoch #8 cost=3.249720
+Epoch #9 cost=3.249720
+** Start training **
+Epoch #0 cost=3.250447
+Epoch #1 cost=3.249727
+Epoch #2 cost=3.249682
+Epoch #3 cost=3.249679
+Epoch #4 cost=3.249679
+Epoch #5 cost=3.249678
+Epoch #6 cost=3.249679
+Epoch #7 cost=3.249678
+Epoch #8 cost=3.249678
+Epoch #9 cost=3.249678
+** Start training **
+Epoch #0 cost=3.250433
+Epoch #1 cost=3.249707
+Epoch #2 cost=3.249661
+Epoch #3 cost=3.249657
+Epoch #4 cost=3.249657
+Epoch #5 cost=3.249657
+Epoch #6 cost=3.249656
+Epoch #7 cost=3.249656
+Epoch #8 cost=3.249656
+Epoch #9 cost=3.249656
+** Start training **
+Epoch #0 cost=3.250471
+Epoch #1 cost=3.249745
+Epoch #2 cost=3.249699
+Epoch #3 cost=3.249696
+Epoch #4 cost=3.249696
+Epoch #5 cost=3.249696
+Epoch #6 cost=3.249695
+Epoch #7 cost=3.249695
+Epoch #8 cost=3.249695
+Epoch #9 cost=3.249695
+** Start training **
+Epoch #0 cost=3.250405
+Epoch #1 cost=3.249689
+Epoch #2 cost=3.249644
+Epoch #3 cost=3.249641
+Epoch #4 cost=3.249641
+Epoch #5 cost=3.249641
+Epoch #6 cost=3.249641
+Epoch #7 cost=3.249641
+Epoch #8 cost=3.249641
+Epoch #9 cost=3.249641
+** Start training **
+Epoch #0 cost=3.250186
+Epoch #1 cost=3.249491
+Epoch #2 cost=3.249448
+Epoch #3 cost=3.249445
+Epoch #4 cost=3.249444
+Epoch #5 cost=3.249444
+Epoch #6 cost=3.249444
+Epoch #7 cost=3.249444
+Epoch #8 cost=3.249444
+Epoch #9 cost=3.249444
+** Start training **
+Epoch #0 cost=3.250638
+Epoch #1 cost=3.250749
+Epoch #2 cost=3.250772
+Epoch #3 cost=3.250774
+Epoch #4 cost=3.250774
+Epoch #5 cost=3.250775
+Epoch #6 cost=3.250775
+Epoch #7 cost=3.250775
+Epoch #8 cost=3.250775
+Epoch #9 cost=3.250776
+Nodes keep percentage is :  0.6999999999999997
+** Start training **
+Epoch #0 cost=3.249593
+Epoch #1 cost=3.249638
+Epoch #2 cost=3.249641
+Epoch #3 cost=3.249641
+Epoch #4 cost=3.249641
+Epoch #5 cost=3.249641
+Epoch #6 cost=3.249640
+Epoch #7 cost=3.249640
+Epoch #8 cost=3.249640
+Epoch #9 cost=3.249640
+** Start training **
+Epoch #0 cost=3.249574
+Epoch #1 cost=3.249616
+Epoch #2 cost=3.249618
+Epoch #3 cost=3.249618
+Epoch #4 cost=3.249618
+Epoch #5 cost=3.249618
+Epoch #6 cost=3.249617
+Epoch #7 cost=3.249617
+Epoch #8 cost=3.249617
+Epoch #9 cost=3.249617
+** Start training **
+Epoch #0 cost=3.249600
+Epoch #1 cost=3.249647
+Epoch #2 cost=3.249650
+Epoch #3 cost=3.249650
+Epoch #4 cost=3.249650
+Epoch #5 cost=3.249650
+Epoch #6 cost=3.249650
+Epoch #7 cost=3.249650
+Epoch #8 cost=3.249649
+Epoch #9 cost=3.249649
+** Start training **
+Epoch #0 cost=3.249666
+Epoch #1 cost=3.249725
+Epoch #2 cost=3.2497282018-08-24 12:28:15.600323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:28:15.600375: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:28:15.600382: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:28:15.600391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:28:15.600495: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:28:37.297157: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:28:37.297203: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:28:37.297211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:28:37.297217: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:28:37.297285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:28:59.219123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:28:59.219170: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:28:59.219176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:28:59.219181: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:28:59.219284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+
+Epoch #3 cost=3.249729
+Epoch #4 cost=3.249728
+Epoch #5 cost=3.249729
+Epoch #6 cost=3.249728
+Epoch #7 cost=3.249728
+Epoch #8 cost=3.249728
+Epoch #9 cost=3.249728
+** Start training **
+Epoch #0 cost=3.249635
+Epoch #1 cost=3.249685
+Epoch #2 cost=3.249687
+Epoch #3 cost=3.249687
+Epoch #4 cost=3.249688
+Epoch #5 cost=3.249687
+Epoch #6 cost=3.249687
+Epoch #7 cost=3.249687
+Epoch #8 cost=3.249687
+Epoch #9 cost=3.249687
+** Start training **
+Epoch #0 cost=3.249614
+Epoch #1 cost=3.249664
+Epoch #2 cost=3.249666
+Epoch #3 cost=3.249666
+Epoch #4 cost=3.249666
+Epoch #5 cost=3.249666
+Epoch #6 cost=3.249666
+Epoch #7 cost=3.249666
+Epoch #8 cost=3.249666
+Epoch #9 cost=3.249666
+** Start training **
+Epoch #0 cost=3.249642
+Epoch #1 cost=3.249704
+Epoch #2 cost=3.249708
+Epoch #3 cost=3.249708
+Epoch #4 cost=3.249708
+Epoch #5 cost=3.249707
+Epoch #6 cost=3.249707
+Epoch #7 cost=3.249707
+Epoch #8 cost=3.249707
+Epoch #9 cost=3.249707
+** Start training **
+Epoch #0 cost=3.249604
+Epoch #1 cost=3.249647
+Epoch #2 cost=3.249650
+Epoch #3 cost=3.249650
+Epoch #4 cost=3.249650
+Epoch #5 cost=3.249649
+Epoch #6 cost=3.249650
+Epoch #7 cost=3.249650
+Epoch #8 cost=3.249650
+Epoch #9 cost=3.249650
+** Start training **
+Epoch #0 cost=3.249431
+Epoch #1 cost=3.249456
+Epoch #2 cost=3.249458
+Epoch #3 cost=3.249457
+Epoch #4 cost=3.249458
+Epoch #5 cost=3.249458
+Epoch #6 cost=3.249457
+Epoch #7 cost=3.249457
+Epoch #8 cost=3.249457
+Epoch #9 cost=3.249458
+** Start training **
+Epoch #0 cost=3.250977
+Epoch #1 cost=3.250793
+Epoch #2 cost=3.250783
+Epoch #3 cost=3.250783
+Epoch #4 cost=3.250783
+Epoch #5 cost=3.250783
+Epoch #6 cost=3.250783
+Epoch #7 cost=3.250783
+Epoch #8 cost=3.250783
+Epoch #9 cost=3.250784
+Nodes keep percentage is :  0.6499999999999997
+** Start training **
+Epoch #0 cost=3.249533
+Epoch #1 cost=3.249675
+Epoch #2 cost=3.249681
+Epoch #3 cost=3.249681
+Epoch #4 cost=3.249681
+Epoch #5 cost=3.249681
+Epoch #6 cost=3.249681
+Epoch #7 cost=3.249680
+Epoch #8 cost=3.249681
+Epoch #9 cost=3.249680
+** Start training **
+Epoch #0 cost=3.249522
+Epoch #1 cost=3.249661
+Epoch #2 cost=3.249667
+Epoch #3 cost=3.249667
+Epoch #4 cost=3.249666
+Epoch #5 cost=3.249666
+Epoch #6 cost=3.249666
+Epoch #7 cost=3.249666
+Epoch #8 cost=3.249665
+Epoch #9 cost=3.249665
+** Start training **
+Epoch #0 cost=3.249543
+Epoch #1 cost=3.249686
+Epoch #2 cost=3.249692
+Epoch #3 cost=3.249692
+Epoch #4 cost=3.249691
+Epoch #5 cost=3.249691
+Epoch #6 cost=3.249691
+Epoch #7 cost=3.249691
+Epoch #8 cost=3.249691
+Epoch #9 cost=3.249691
+** Start training **
+Epoch #0 cost=3.249590
+Epoch #1 cost=3.249739
+Epoch #2 cost=3.249746
+Epoch #3 cost=3.249746
+Epoch #4 cost=3.249746
+Epoch #5 cost=3.249746
+Epoch #6 cost=3.249746
+Epoch #7 cost=3.249746
+Epoch #8 cost=3.249746
+Epoch #9 cost=3.249746
+** Start training **
+Epoch #0 cost=3.249564
+Epoch #1 cost=3.249712
+Epoch #2 cost=3.249718
+Epoch #3 cost=3.249718
+Epoch #4 cost=3.249718
+Epoch #5 cost=3.249718
+Epoch #6 cost=3.249718
+Epoch #7 cost=3.249718
+Epoch #8 cost=3.249718
+Epoch #9 cost=3.249718
+** Start training **
+Epoch #0 cost=3.249539
+Epoch #1 cost=3.249688
+Epoch #2 cost=3.249695
+Epoch #3 cost=3.249695
+Epoch #4 cost=3.249695
+Epoch #5 cost=3.249695
+Epoch #6 cost=3.249694
+Epoch #7 cost=3.249694
+Epoch #8 cost=3.249694
+Epoch #9 cost=3.249694
+** Start training **
+Epoch #0 cost=3.249569
+Epoch #1 cost=3.249729
+Epoch #2 cost=3.249737
+Epoch #3 cost=3.249736
+Epoch #4 cost=3.249736
+Epoch #5 cost=3.249736
+Epoch #6 cost=3.249736
+Epoch #7 cost=3.249736
+Epoch #8 cost=3.249736
+Epoch #9 cost=3.249735
+** Start training **
+Epoch #0 cost=3.249512
+Epoch #1 cost=3.249665
+Epoch #2 cost=3.249672
+Epoch #3 cost=3.249672
+Epoch #4 cost=3.249672
+Epoch #5 cost=3.249672
+Epoch #6 cost=3.249672
+Epoch #7 cost=3.249672
+Epoch #8 cost=3.249672
+Epoch #9 cost=3.249672
+** Start training **
+Epoch #0 cost=3.249328
+Epoch #1 cost=3.249454
+Epoch #2 cost=3.249459
+Epoch #3 cost=3.249459
+Epoch #4 cost=3.249459
+Epoch #5 cost=3.249459
+Epoch #6 cost=3.249459
+Epoch #7 cost=3.249459
+Epoch #8 cost=3.249459
+Epoch #9 cost=3.249459
+** Start training **
+Epoch #0 cost=3.250775
+Epoch #1 cost=3.250709
+Epoch #2 cost=3.250709
+Epoch #3 cost=3.250709
+Epoch #4 cost=3.250710
+Epoch #5 cost=3.250710
+Epoch #6 cost=3.250710
+Epoch #7 cost=3.250711
+Epoch #8 cost=3.250711
+Epoch #9 cost=3.250711
+Nodes keep percentage is :  0.5999999999999996
+** Start training **
+Epoch #0 cost=3.249770
+Epoch #1 cost=3.249687
+Epoch #2 cost=3.249684
+Epoch #3 cost=3.249684
+Epoch #4 cost=3.249684
+Epoch #5 cost=3.249683
+Epoch #6 cost=3.249683
+Epoch #7 cost=3.249682
+Epoch #8 cost=3.249682
+Epoch #9 cost=3.249682
+** Start training **
+Epoch #0 cost=3.249759
+Epoch #1 cost=3.249673
+Epoch #2 cost=3.249670
+Epoch #3 cost=3.249670
+Epoch #4 cost=3.249669
+Epoch #5 cost=3.249669
+Epoch #6 cost=3.249668
+Epoch #7 cost=3.249668
+Epoch #8 cost=3.249668
+Epoch #9 cost=3.249668
+** Start training **
+Epoch #0 cost=3.249783
+Epoch #1 cost=3.249697
+Epoch #2 cost=3.249694
+Epoch #3 cost=3.249694
+Epoch #4 cost=3.249694
+Epoch #5 cost=3.249693
+Epoch #6 cost=3.249693
+Epoch #7 cost=3.249693
+Epoch #8 cost=3.249692
+Epoch #9 cost=3.249692
+** Start training **
+Epoch #0 cost=3.249850
+Epoch #1 cost=3.249761
+Epoch #2 cost=3.249758
+Epoch #3 cost=3.249758
+Epoch #4 cost=3.249757
+Epoch #5 cost=3.249757
+Epoch #6 cost=3.249757
+Epoch #7 cost=3.249757
+Epoch #8 cost=3.249757
+Epoch #9 cost=3.249757
+** Start training **
+Epoch #0 cost=3.249815
+Epoch #1 cost=3.249727
+Epoch #2 cost=3.249724
+Epoch #3 cost=3.249724
+Epoch #4 cost=3.249723
+Epoch #5 cost=3.249723
+Epoch #6 cost=3.249723
+Epoch #7 cost=3.249723
+Epoch #8 cost=3.249723
+Epoch #9 cost=3.249723
+** Start training **
+Epoch #0 cost=3.249786
+Epoch #1 cost=3.249703
+Epoch #2 cost=3.249699
+Epoch #3 cost=3.249699
+Epoch #4 cost=3.249699
+Epoch #5 cost=3.249699
+Epoch #6 cost=3.249699
+Epoch #7 cost=3.249698
+Epoch #8 cost=3.249698
+Epoch #9 cost=3.249698
+** Start training **
+Epoch #0 cost=3.249839
+Epoch #1 cost=3.249744
+Epoch #2 cost=3.249741
+Epoch #3 cost=3.249740
+Epoch #4 cost=3.249740
+Epoch #5 cost=3.249740
+Epoch #6 cost=3.249740
+Epoch #7 cost=3.249740
+Epoch #8 cost=3.249740
+Epoch #9 cost=3.249739
+** Start training **
+Epoch #0 cost=3.249765
+Epoch #1 cost=3.249684
+Epoch #2 cost=3.249682
+Epoch #3 cost=3.249681
+Epoch #4 cost=3.249681
+Epoch #5 cost=3.249681
+Epoch #6 cost=3.249681
+Epoch #7 cost=3.249681
+Epoch #8 cost=3.249681
+Epoch #9 cost=3.249680
+** Start training **
+Epoch #0 cost=3.249557
+Epoch #1 cost=3.249473
+Epoch #2 cost=3.249470
+Epoch #3 cost=3.249470
+Epoch #4 cost=3.249470
+Epoch #5 cost=3.249470
+Epoch #6 cost=3.249470
+Epoch #7 cost=3.249470
+Epoch #8 cost=3.249470
+Epoch #9 cost=3.249470
+** Start training **
+Epoch #0 cost=3.250751
+Epoch #1 cost=3.250725
+Epoch #2 cost=3.250729
+Epoch #3 cost=3.250729
+Epoch #4 cost=3.250729
+Epoch #5 cost=3.250730
+Epoch #6 cost=3.250730
+Epoch #7 cost=3.250730
+Epoch #8 cost=3.250731
+Epoch #9 cost=3.250731
+Nodes keep percentage is :  0.5499999999999996
+** Start training **
+Epoch #0 cost=3.249533
+Epoch #1 cost=3.249698
+Epoch #2 cost=3.249704
+Epoch #3 cost=3.249704
+Epoch #4 cost=3.249703
+Epoch #5 cost=3.249703
+Epoch #6 cost=3.249703
+Epoch #7 cost=3.249703
+Epoch #8 cost=3.249702
+Epoch #9 cost=3.249702
+** Start training **
+Epoch #0 cost=3.249519
+Epoch #1 cost=3.249683
+Epoch #2 cost=3.249689
+Epoch #3 cost=3.249689
+Epoch #4 cost=3.249688
+Epoch #5 cost=3.249688
+Epoch #6 cost=3.249688
+Epoch #7 cost=3.249687
+Epoch #8 cost=3.249687
+Epoch #9 cost=3.249687
+** Start training **
+Epoch #0 cost=3.249537
+Epoch #1 cost=3.249705
+Epoch #2 cost=3.249711
+Epoch #3 cost=3.249710
+Epoch #4 cost=3.249710
+Epoch #5 cost=3.249710
+Epoch #6 cost=3.249710
+Epoch #7 cost=3.249709
+Epoch #8 cost=3.249709
+Epoch #9 cost=3.249709
+** Start training **
+Epoch #0 cost=3.249589
+Epoch #1 cost=3.249757
+Epoch #2 cost=3.249763
+Epoch #3 cost=3.249763
+Epoch #4 cost=3.249763
+Epoch #5 cost=3.249763
+Epoch #6 cost=3.249763
+Epoch #7 cost=3.249762
+Epoch #8 cost=3.249763
+Epoch #9 cost=3.249762
+** Start training **
+Epoch #0 cost=3.249563
+Epoch #1 cost=3.249728
+Epoch #2 cost=3.249734
+Epoch #3 cost=3.249734
+Epoch #4 cost=3.249734
+Epoch #5 cost=3.249733
+Epoch #6 cost=3.249734
+Epoch #7 cost=3.249733
+Epoch #8 cost=3.249733
+Epoch #9 cost=3.249732
+** Start training **
+Epoch #0 cost=3.249537
+Epoch #1 cost=3.249707
+Epoch #2 cost=3.249713
+Epoch #3 cost=3.2497122018-08-24 12:29:20.448919: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:29:20.448962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:29:20.448969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:29:20.448973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:29:20.449077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:29:41.624489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:29:41.624536: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:29:41.624543: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:29:41.624548: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:29:41.624647: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:30:02.767762: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:30:02.767809: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:30:02.767816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:30:02.767821: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:30:02.767919: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+
+Epoch #4 cost=3.249712
+Epoch #5 cost=3.249712
+Epoch #6 cost=3.249712
+Epoch #7 cost=3.249712
+Epoch #8 cost=3.249711
+Epoch #9 cost=3.249711
+** Start training **
+Epoch #0 cost=3.249590
+Epoch #1 cost=3.249746
+Epoch #2 cost=3.249752
+Epoch #3 cost=3.249752
+Epoch #4 cost=3.249751
+Epoch #5 cost=3.249751
+Epoch #6 cost=3.249751
+Epoch #7 cost=3.249750
+Epoch #8 cost=3.249750
+Epoch #9 cost=3.249750
+** Start training **
+Epoch #0 cost=3.249515
+Epoch #1 cost=3.249681
+Epoch #2 cost=3.249686
+Epoch #3 cost=3.249687
+Epoch #4 cost=3.249686
+Epoch #5 cost=3.249686
+Epoch #6 cost=3.249686
+Epoch #7 cost=3.249686
+Epoch #8 cost=3.249686
+Epoch #9 cost=3.249686
+** Start training **
+Epoch #0 cost=3.249309
+Epoch #1 cost=3.249462
+Epoch #2 cost=3.249468
+Epoch #3 cost=3.249468
+Epoch #4 cost=3.249468
+Epoch #5 cost=3.249468
+Epoch #6 cost=3.249468
+Epoch #7 cost=3.249468
+Epoch #8 cost=3.249467
+Epoch #9 cost=3.249468
+** Start training **
+Epoch #0 cost=3.250698
+Epoch #1 cost=3.250672
+Epoch #2 cost=3.250672
+Epoch #3 cost=3.250672
+Epoch #4 cost=3.250673
+Epoch #5 cost=3.250674
+Epoch #6 cost=3.250674
+Epoch #7 cost=3.250674
+Epoch #8 cost=3.250675
+Epoch #9 cost=3.250675
+Nodes keep percentage is :  0.49999999999999956
+** Start training **
+Epoch #0 cost=3.249575
+Epoch #1 cost=3.249727
+Epoch #2 cost=3.249729
+Epoch #3 cost=3.249728
+Epoch #4 cost=3.249728
+Epoch #5 cost=3.249728
+Epoch #6 cost=3.249727
+Epoch #7 cost=3.249727
+Epoch #8 cost=3.249727
+Epoch #9 cost=3.249726
+** Start training **
+Epoch #0 cost=3.249565
+Epoch #1 cost=3.249718
+Epoch #2 cost=3.249720
+Epoch #3 cost=3.249719
+Epoch #4 cost=3.249719
+Epoch #5 cost=3.249719
+Epoch #6 cost=3.249718
+Epoch #7 cost=3.249718
+Epoch #8 cost=3.249717
+Epoch #9 cost=3.249717
+** Start training **
+Epoch #0 cost=3.249581
+Epoch #1 cost=3.249735
+Epoch #2 cost=3.249737
+Epoch #3 cost=3.249736
+Epoch #4 cost=3.249736
+Epoch #5 cost=3.249736
+Epoch #6 cost=3.249735
+Epoch #7 cost=3.249735
+Epoch #8 cost=3.249735
+Epoch #9 cost=3.249734
+** Start training **
+Epoch #0 cost=3.249616
+Epoch #1 cost=3.249773
+Epoch #2 cost=3.249775
+Epoch #3 cost=3.249775
+Epoch #4 cost=3.249774
+Epoch #5 cost=3.249774
+Epoch #6 cost=3.249774
+Epoch #7 cost=3.249774
+Epoch #8 cost=3.249774
+Epoch #9 cost=3.249774
+** Start training **
+Epoch #0 cost=3.249600
+Epoch #1 cost=3.249753
+Epoch #2 cost=3.249754
+Epoch #3 cost=3.249754
+Epoch #4 cost=3.249754
+Epoch #5 cost=3.249753
+Epoch #6 cost=3.249753
+Epoch #7 cost=3.249753
+Epoch #8 cost=3.249753
+Epoch #9 cost=3.249753
+** Start training **
+Epoch #0 cost=3.249575
+Epoch #1 cost=3.249728
+Epoch #2 cost=3.249730
+Epoch #3 cost=3.249730
+Epoch #4 cost=3.249729
+Epoch #5 cost=3.249729
+Epoch #6 cost=3.249729
+Epoch #7 cost=3.249728
+Epoch #8 cost=3.249728
+Epoch #9 cost=3.249728
+** Start training **
+Epoch #0 cost=3.249615
+Epoch #1 cost=3.249768
+Epoch #2 cost=3.249770
+Epoch #3 cost=3.249770
+Epoch #4 cost=3.249769
+Epoch #5 cost=3.249769
+Epoch #6 cost=3.249769
+Epoch #7 cost=3.249768
+Epoch #8 cost=3.249768
+Epoch #9 cost=3.249768
+** Start training **
+Epoch #0 cost=3.249551
+Epoch #1 cost=3.249703
+Epoch #2 cost=3.249705
+Epoch #3 cost=3.249705
+Epoch #4 cost=3.249704
+Epoch #5 cost=3.249704
+Epoch #6 cost=3.249704
+Epoch #7 cost=3.249703
+Epoch #8 cost=3.249703
+Epoch #9 cost=3.249703
+** Start training **
+Epoch #0 cost=3.249324
+Epoch #1 cost=3.249469
+Epoch #2 cost=3.249470
+Epoch #3 cost=3.249470
+Epoch #4 cost=3.249470
+Epoch #5 cost=3.249470
+Epoch #6 cost=3.249470
+Epoch #7 cost=3.249470
+Epoch #8 cost=3.249470
+Epoch #9 cost=3.249470
+** Start training **
+Epoch #0 cost=3.250642
+Epoch #1 cost=3.250639
+Epoch #2 cost=3.250640
+Epoch #3 cost=3.250641
+Epoch #4 cost=3.250641
+Epoch #5 cost=3.250642
+Epoch #6 cost=3.250643
+Epoch #7 cost=3.250643
+Epoch #8 cost=3.250644
+Epoch #9 cost=3.250644
+Nodes keep percentage is :  0.4499999999999995
+** Start training **
+Epoch #0 cost=3.249737
+Epoch #1 cost=3.249731
+Epoch #2 cost=3.249732
+Epoch #3 cost=3.249731
+Epoch #4 cost=3.249731
+Epoch #5 cost=3.249730
+Epoch #6 cost=3.249729
+Epoch #7 cost=3.249729
+Epoch #8 cost=3.249729
+Epoch #9 cost=3.249728
+** Start training **
+Epoch #0 cost=3.249725
+Epoch #1 cost=3.249720
+Epoch #2 cost=3.249720
+Epoch #3 cost=3.249720
+Epoch #4 cost=3.249719
+Epoch #5 cost=3.249719
+Epoch #6 cost=3.249718
+Epoch #7 cost=3.249718
+Epoch #8 cost=3.249718
+Epoch #9 cost=3.249717
+** Start training **
+Epoch #0 cost=3.249742
+Epoch #1 cost=3.249739
+Epoch #2 cost=3.249740
+Epoch #3 cost=3.249739
+Epoch #4 cost=3.249739
+Epoch #5 cost=3.249739
+Epoch #6 cost=3.249738
+Epoch #7 cost=3.249738
+Epoch #8 cost=3.249738
+Epoch #9 cost=3.249738
+** Start training **
+Epoch #0 cost=3.249792
+Epoch #1 cost=3.249786
+Epoch #2 cost=3.249786
+Epoch #3 cost=3.249786
+Epoch #4 cost=3.249786
+Epoch #5 cost=3.249786
+Epoch #6 cost=3.249785
+Epoch #7 cost=3.249785
+Epoch #8 cost=3.249785
+Epoch #9 cost=3.249785
+** Start training **
+Epoch #0 cost=3.249763
+Epoch #1 cost=3.249760
+Epoch #2 cost=3.249761
+Epoch #3 cost=3.249760
+Epoch #4 cost=3.249760
+Epoch #5 cost=3.249759
+Epoch #6 cost=3.249759
+Epoch #7 cost=3.249759
+Epoch #8 cost=3.249759
+Epoch #9 cost=3.249758
+** Start training **
+Epoch #0 cost=3.249740
+Epoch #1 cost=3.249737
+Epoch #2 cost=3.249738
+Epoch #3 cost=3.249738
+Epoch #4 cost=3.249737
+Epoch #5 cost=3.249737
+Epoch #6 cost=3.249737
+Epoch #7 cost=3.249737
+Epoch #8 cost=3.249736
+Epoch #9 cost=3.249736
+** Start training **
+Epoch #0 cost=3.249784
+Epoch #1 cost=3.249775
+Epoch #2 cost=3.249775
+Epoch #3 cost=3.249775
+Epoch #4 cost=3.249774
+Epoch #5 cost=3.249774
+Epoch #6 cost=3.249774
+Epoch #7 cost=3.249774
+Epoch #8 cost=3.249774
+Epoch #9 cost=3.249773
+** Start training **
+Epoch #0 cost=3.249715
+Epoch #1 cost=3.249711
+Epoch #2 cost=3.249712
+Epoch #3 cost=3.249711
+Epoch #4 cost=3.249711
+Epoch #5 cost=3.249711
+Epoch #6 cost=3.249711
+Epoch #7 cost=3.249710
+Epoch #8 cost=3.249710
+Epoch #9 cost=3.249710
+** Start training **
+Epoch #0 cost=3.249500
+Epoch #1 cost=3.249485
+Epoch #2 cost=3.249485
+Epoch #3 cost=3.249485
+Epoch #4 cost=3.249485
+Epoch #5 cost=3.249485
+Epoch #6 cost=3.249485
+Epoch #7 cost=3.249485
+Epoch #8 cost=3.249484
+Epoch #9 cost=3.249484
+** Start training **
+Epoch #0 cost=3.250744
+Epoch #1 cost=3.250654
+Epoch #2 cost=3.250653
+Epoch #3 cost=3.250653
+Epoch #4 cost=3.250654
+Epoch #5 cost=3.250654
+Epoch #6 cost=3.250655
+Epoch #7 cost=3.250655
+Epoch #8 cost=3.250656
+Epoch #9 cost=3.250656
+Nodes keep percentage is :  0.39999999999999947
+** Start training **
+Epoch #0 cost=3.249743
+Epoch #1 cost=3.249765
+Epoch #2 cost=3.249765
+Epoch #3 cost=3.249764
+Epoch #4 cost=3.249763
+Epoch #5 cost=3.249763
+Epoch #6 cost=3.249762
+Epoch #7 cost=3.249761
+Epoch #8 cost=3.249761
+Epoch #9 cost=3.249760
+** Start training **
+Epoch #0 cost=3.249736
+Epoch #1 cost=3.249758
+Epoch #2 cost=3.249758
+Epoch #3 cost=3.249757
+Epoch #4 cost=3.249757
+Epoch #5 cost=3.249757
+Epoch #6 cost=3.249756
+Epoch #7 cost=3.249755
+Epoch #8 cost=3.249755
+Epoch #9 cost=3.249754
+** Start training **
+Epoch #0 cost=3.249747
+Epoch #1 cost=3.249772
+Epoch #2 cost=3.249772
+Epoch #3 cost=3.249771
+Epoch #4 cost=3.249770
+Epoch #5 cost=3.249770
+Epoch #6 cost=3.249770
+Epoch #7 cost=3.249769
+Epoch #8 cost=3.249768
+Epoch #9 cost=3.249768
+** Start training **
+Epoch #0 cost=3.249776
+Epoch #1 cost=3.249800
+Epoch #2 cost=3.249800
+Epoch #3 cost=3.249800
+Epoch #4 cost=3.249800
+Epoch #5 cost=3.249799
+Epoch #6 cost=3.249799
+Epoch #7 cost=3.249798
+Epoch #8 cost=3.249798
+Epoch #9 cost=3.249797
+** Start training **
+Epoch #0 cost=3.249757
+Epoch #1 cost=3.249781
+Epoch #2 cost=3.249782
+Epoch #3 cost=3.249781
+Epoch #4 cost=3.249780
+Epoch #5 cost=3.249780
+Epoch #6 cost=3.249780
+Epoch #7 cost=3.249779
+Epoch #8 cost=3.249778
+Epoch #9 cost=3.249778
+** Start training **
+Epoch #0 cost=3.249735
+Epoch #1 cost=3.249762
+Epoch #2 cost=3.249762
+Epoch #3 cost=3.249761
+Epoch #4 cost=3.249761
+Epoch #5 cost=3.249760
+Epoch #6 cost=3.249760
+Epoch #7 cost=3.249759
+Epoch #8 cost=3.249758
+Epoch #9 cost=3.249758
+** Start training **
+Epoch #0 cost=3.249766
+Epoch #1 cost=3.249794
+Epoch #2 cost=3.249794
+Epoch #3 cost=3.249794
+Epoch #4 cost=3.249793
+Epoch #5 cost=3.249793
+Epoch #6 cost=3.249792
+Epoch #7 cost=3.249792
+Epoch #8 cost=3.249791
+Epoch #9 cost=3.249790
+** Start training **
+Epoch #0 cost=3.249708
+Epoch #1 cost=3.249729
+Epoch #2 cost=3.249729
+Epoch #3 cost=3.249728
+Epoch #4 cost=3.2497282018-08-24 12:30:24.160692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:30:24.160752: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:30:24.160778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:30:24.160797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:30:24.160890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:30:45.503153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:30:45.503200: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:30:45.503207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:30:45.503212: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:30:45.503315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:31:06.964199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:31:06.964244: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:31:06.964251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:31:06.964255: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:31:06.964356: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+
+Epoch #5 cost=3.249727
+Epoch #6 cost=3.249727
+Epoch #7 cost=3.249727
+Epoch #8 cost=3.249726
+Epoch #9 cost=3.249726
+** Start training **
+Epoch #0 cost=3.249469
+Epoch #1 cost=3.249483
+Epoch #2 cost=3.249482
+Epoch #3 cost=3.249482
+Epoch #4 cost=3.249482
+Epoch #5 cost=3.249481
+Epoch #6 cost=3.249481
+Epoch #7 cost=3.249481
+Epoch #8 cost=3.249480
+Epoch #9 cost=3.249480
+** Start training **
+Epoch #0 cost=3.250637
+Epoch #1 cost=3.250568
+Epoch #2 cost=3.250567
+Epoch #3 cost=3.250569
+Epoch #4 cost=3.250570
+Epoch #5 cost=3.250570
+Epoch #6 cost=3.250571
+Epoch #7 cost=3.250571
+Epoch #8 cost=3.250572
+Epoch #9 cost=3.250573
+Nodes keep percentage is :  0.3499999999999994
+** Start training **
+Epoch #0 cost=3.249665
+Epoch #1 cost=3.249763
+Epoch #2 cost=3.249763
+Epoch #3 cost=3.249762
+Epoch #4 cost=3.249762
+Epoch #5 cost=3.249761
+Epoch #6 cost=3.249760
+Epoch #7 cost=3.249760
+Epoch #8 cost=3.249759
+Epoch #9 cost=3.249758
+** Start training **
+Epoch #0 cost=3.249660
+Epoch #1 cost=3.249754
+Epoch #2 cost=3.249755
+Epoch #3 cost=3.249754
+Epoch #4 cost=3.249754
+Epoch #5 cost=3.249753
+Epoch #6 cost=3.249753
+Epoch #7 cost=3.249752
+Epoch #8 cost=3.249752
+Epoch #9 cost=3.249751
+** Start training **
+Epoch #0 cost=3.249673
+Epoch #1 cost=3.249768
+Epoch #2 cost=3.249769
+Epoch #3 cost=3.249768
+Epoch #4 cost=3.249768
+Epoch #5 cost=3.249768
+Epoch #6 cost=3.249767
+Epoch #7 cost=3.249766
+Epoch #8 cost=3.249766
+Epoch #9 cost=3.249765
+** Start training **
+Epoch #0 cost=3.249703
+Epoch #1 cost=3.249801
+Epoch #2 cost=3.249802
+Epoch #3 cost=3.249801
+Epoch #4 cost=3.249801
+Epoch #5 cost=3.249800
+Epoch #6 cost=3.249800
+Epoch #7 cost=3.249800
+Epoch #8 cost=3.249799
+Epoch #9 cost=3.249799
+** Start training **
+Epoch #0 cost=3.249684
+Epoch #1 cost=3.249780
+Epoch #2 cost=3.249781
+Epoch #3 cost=3.249781
+Epoch #4 cost=3.249780
+Epoch #5 cost=3.249779
+Epoch #6 cost=3.249779
+Epoch #7 cost=3.249779
+Epoch #8 cost=3.249778
+Epoch #9 cost=3.249777
+** Start training **
+Epoch #0 cost=3.249662
+Epoch #1 cost=3.249760
+Epoch #2 cost=3.249761
+Epoch #3 cost=3.249760
+Epoch #4 cost=3.249760
+Epoch #5 cost=3.249759
+Epoch #6 cost=3.249759
+Epoch #7 cost=3.249758
+Epoch #8 cost=3.249758
+Epoch #9 cost=3.249757
+** Start training **
+Epoch #0 cost=3.249700
+Epoch #1 cost=3.249796
+Epoch #2 cost=3.249797
+Epoch #3 cost=3.249796
+Epoch #4 cost=3.249796
+Epoch #5 cost=3.249795
+Epoch #6 cost=3.249795
+Epoch #7 cost=3.249794
+Epoch #8 cost=3.249794
+Epoch #9 cost=3.249793
+** Start training **
+Epoch #0 cost=3.249633
+Epoch #1 cost=3.249727
+Epoch #2 cost=3.249728
+Epoch #3 cost=3.249728
+Epoch #4 cost=3.249727
+Epoch #5 cost=3.249727
+Epoch #6 cost=3.249726
+Epoch #7 cost=3.249726
+Epoch #8 cost=3.249726
+Epoch #9 cost=3.249725
+** Start training **
+Epoch #0 cost=3.249396
+Epoch #1 cost=3.249485
+Epoch #2 cost=3.249486
+Epoch #3 cost=3.249485
+Epoch #4 cost=3.249485
+Epoch #5 cost=3.249485
+Epoch #6 cost=3.249485
+Epoch #7 cost=3.249485
+Epoch #8 cost=3.249484
+Epoch #9 cost=3.249483
+** Start training **
+Epoch #0 cost=3.250594
+Epoch #1 cost=3.250591
+Epoch #2 cost=3.250592
+Epoch #3 cost=3.250592
+Epoch #4 cost=3.250593
+Epoch #5 cost=3.250594
+Epoch #6 cost=3.250595
+Epoch #7 cost=3.250596
+Epoch #8 cost=3.250596
+Epoch #9 cost=3.250597
+Nodes keep percentage is :  0.2999999999999994
+** Start training **
+Epoch #0 cost=3.249833
+Epoch #1 cost=3.249789
+Epoch #2 cost=3.249787
+Epoch #3 cost=3.249787
+Epoch #4 cost=3.249786
+Epoch #5 cost=3.249786
+Epoch #6 cost=3.249785
+Epoch #7 cost=3.249784
+Epoch #8 cost=3.249784
+Epoch #9 cost=3.249783
+** Start training **
+Epoch #0 cost=3.249828
+Epoch #1 cost=3.249783
+Epoch #2 cost=3.249782
+Epoch #3 cost=3.249781
+Epoch #4 cost=3.249780
+Epoch #5 cost=3.249779
+Epoch #6 cost=3.249779
+Epoch #7 cost=3.249778
+Epoch #8 cost=3.249777
+Epoch #9 cost=3.249776
+** Start training **
+Epoch #0 cost=3.249841
+Epoch #1 cost=3.249796
+Epoch #2 cost=3.249794
+Epoch #3 cost=3.249793
+Epoch #4 cost=3.249793
+Epoch #5 cost=3.249793
+Epoch #6 cost=3.249792
+Epoch #7 cost=3.249791
+Epoch #8 cost=3.249790
+Epoch #9 cost=3.249790
+** Start training **
+Epoch #0 cost=3.249870
+Epoch #1 cost=3.249825
+Epoch #2 cost=3.249824
+Epoch #3 cost=3.249823
+Epoch #4 cost=3.249822
+Epoch #5 cost=3.249822
+Epoch #6 cost=3.249821
+Epoch #7 cost=3.249821
+Epoch #8 cost=3.249820
+Epoch #9 cost=3.249819
+** Start training **
+Epoch #0 cost=3.249852
+Epoch #1 cost=3.249806
+Epoch #2 cost=3.249805
+Epoch #3 cost=3.249804
+Epoch #4 cost=3.249804
+Epoch #5 cost=3.249803
+Epoch #6 cost=3.249803
+Epoch #7 cost=3.249802
+Epoch #8 cost=3.249802
+Epoch #9 cost=3.249801
+** Start training **
+Epoch #0 cost=3.249831
+Epoch #1 cost=3.249787
+Epoch #2 cost=3.249785
+Epoch #3 cost=3.249784
+Epoch #4 cost=3.249784
+Epoch #5 cost=3.249783
+Epoch #6 cost=3.249782
+Epoch #7 cost=3.249782
+Epoch #8 cost=3.249781
+Epoch #9 cost=3.249780
+** Start training **
+Epoch #0 cost=3.249863
+Epoch #1 cost=3.249816
+Epoch #2 cost=3.249815
+Epoch #3 cost=3.249814
+Epoch #4 cost=3.249814
+Epoch #5 cost=3.249813
+Epoch #6 cost=3.249812
+Epoch #7 cost=3.249812
+Epoch #8 cost=3.249811
+Epoch #9 cost=3.249810
+** Start training **
+Epoch #0 cost=3.249800
+Epoch #1 cost=3.249754
+Epoch #2 cost=3.249753
+Epoch #3 cost=3.249753
+Epoch #4 cost=3.249752
+Epoch #5 cost=3.249752
+Epoch #6 cost=3.249751
+Epoch #7 cost=3.249750
+Epoch #8 cost=3.249750
+Epoch #9 cost=3.249749
+** Start training **
+Epoch #0 cost=3.249543
+Epoch #1 cost=3.249503
+Epoch #2 cost=3.249502
+Epoch #3 cost=3.249501
+Epoch #4 cost=3.249501
+Epoch #5 cost=3.249501
+Epoch #6 cost=3.249500
+Epoch #7 cost=3.249500
+Epoch #8 cost=3.249500
+Epoch #9 cost=3.249499
+** Start training **
+Epoch #0 cost=3.250505
+Epoch #1 cost=3.250547
+Epoch #2 cost=3.250548
+Epoch #3 cost=3.250549
+Epoch #4 cost=3.250550
+Epoch #5 cost=3.250551
+Epoch #6 cost=3.250552
+Epoch #7 cost=3.250553
+Epoch #8 cost=3.250554
+Epoch #9 cost=3.250555
+Nodes keep percentage is :  0.24999999999999933
+** Start training **
+Epoch #0 cost=3.249874
+Epoch #1 cost=3.249882
+Epoch #2 cost=3.249882
+Epoch #3 cost=3.249881
+Epoch #4 cost=3.249880
+Epoch #5 cost=3.249879
+Epoch #6 cost=3.249878
+Epoch #7 cost=3.249877
+Epoch #8 cost=3.249876
+Epoch #9 cost=3.249875
+** Start training **
+Epoch #0 cost=3.249871
+Epoch #1 cost=3.249880
+Epoch #2 cost=3.249879
+Epoch #3 cost=3.249879
+Epoch #4 cost=3.249877
+Epoch #5 cost=3.249876
+Epoch #6 cost=3.249876
+Epoch #7 cost=3.249875
+Epoch #8 cost=3.249874
+Epoch #9 cost=3.249872
+** Start training **
+Epoch #0 cost=3.249877
+Epoch #1 cost=3.249886
+Epoch #2 cost=3.249885
+Epoch #3 cost=3.249884
+Epoch #4 cost=3.249884
+Epoch #5 cost=3.249882
+Epoch #6 cost=3.249882
+Epoch #7 cost=3.249881
+Epoch #8 cost=3.249880
+Epoch #9 cost=3.249879
+** Start training **
+Epoch #0 cost=3.249888
+Epoch #1 cost=3.249897
+Epoch #2 cost=3.249897
+Epoch #3 cost=3.249896
+Epoch #4 cost=3.249895
+Epoch #5 cost=3.249894
+Epoch #6 cost=3.249894
+Epoch #7 cost=3.249893
+Epoch #8 cost=3.249892
+Epoch #9 cost=3.249891
+** Start training **
+Epoch #0 cost=3.249880
+Epoch #1 cost=3.249890
+Epoch #2 cost=3.249889
+Epoch #3 cost=3.249888
+Epoch #4 cost=3.249887
+Epoch #5 cost=3.249886
+Epoch #6 cost=3.249886
+Epoch #7 cost=3.249885
+Epoch #8 cost=3.249884
+Epoch #9 cost=3.249883
+** Start training **
+Epoch #0 cost=3.249865
+Epoch #1 cost=3.249874
+Epoch #2 cost=3.249873
+Epoch #3 cost=3.249873
+Epoch #4 cost=3.249871
+Epoch #5 cost=3.249871
+Epoch #6 cost=3.249870
+Epoch #7 cost=3.249869
+Epoch #8 cost=3.249868
+Epoch #9 cost=3.249867
+** Start training **
+Epoch #0 cost=3.249886
+Epoch #1 cost=3.249896
+Epoch #2 cost=3.249895
+Epoch #3 cost=3.249894
+Epoch #4 cost=3.249893
+Epoch #5 cost=3.249892
+Epoch #6 cost=3.249892
+Epoch #7 cost=3.249891
+Epoch #8 cost=3.249890
+Epoch #9 cost=3.249889
+** Start training **
+Epoch #0 cost=3.249833
+Epoch #1 cost=3.249842
+Epoch #2 cost=3.249841
+Epoch #3 cost=3.249840
+Epoch #4 cost=3.249839
+Epoch #5 cost=3.249839
+Epoch #6 cost=3.249838
+Epoch #7 cost=3.249837
+Epoch #8 cost=3.249836
+Epoch #9 cost=3.249835
+** Start training **
+Epoch #0 cost=3.249559
+Epoch #1 cost=3.249567
+Epoch #2 cost=3.249566
+Epoch #3 cost=3.249565
+Epoch #4 cost=3.249564
+Epoch #5 cost=3.249563
+Epoch #6 cost=3.249563
+Epoch #7 cost=3.249562
+Epoch #8 cost=3.249562
+Epoch #9 cost=3.249560
+** Start training **
+Epoch #0 cost=3.250440
+Epoch #1 cost=3.250430
+Epoch #2 cost=3.250431
+Epoch #3 cost=3.250433
+Epoch #4 cost=3.250434
+Epoch #5 cost=3.2504352018-08-24 12:31:28.294154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:31:28.294195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:31:28.294202: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:31:28.294207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:31:28.294309: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:31:49.751358: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:31:49.751403: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:31:49.751410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:31:49.751415: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:31:49.751519: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:32:11.236200: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:32:11.236249: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:32:11.236256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:32:11.236271: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:32:11.236379: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-08-24 12:32:32.739677: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-08-24 12:32:32.739724: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-08-24 12:32:32.739746: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-08-24 12:32:32.739751: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-08-24 12:32:32.739857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1020 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+
+Epoch #6 cost=3.250436
+Epoch #7 cost=3.250437
+Epoch #8 cost=3.250438
+Epoch #9 cost=3.250439
+Nodes keep percentage is :  0.1999999999999993
+** Start training **
+Epoch #0 cost=3.249821
+Epoch #1 cost=3.249868
+Epoch #2 cost=3.249867
+Epoch #3 cost=3.249866
+Epoch #4 cost=3.249865
+Epoch #5 cost=3.249864
+Epoch #6 cost=3.249863
+Epoch #7 cost=3.249862
+Epoch #8 cost=3.249861
+Epoch #9 cost=3.249860
+** Start training **
+Epoch #0 cost=3.249817
+Epoch #1 cost=3.249865
+Epoch #2 cost=3.249864
+Epoch #3 cost=3.249863
+Epoch #4 cost=3.249862
+Epoch #5 cost=3.249861
+Epoch #6 cost=3.249860
+Epoch #7 cost=3.249859
+Epoch #8 cost=3.249858
+Epoch #9 cost=3.249857
+** Start training **
+Epoch #0 cost=3.249822
+Epoch #1 cost=3.249871
+Epoch #2 cost=3.249870
+Epoch #3 cost=3.249869
+Epoch #4 cost=3.249868
+Epoch #5 cost=3.249867
+Epoch #6 cost=3.249866
+Epoch #7 cost=3.249865
+Epoch #8 cost=3.249865
+Epoch #9 cost=3.249864
+** Start training **
+Epoch #0 cost=3.249837
+Epoch #1 cost=3.249885
+Epoch #2 cost=3.249884
+Epoch #3 cost=3.249883
+Epoch #4 cost=3.249882
+Epoch #5 cost=3.249882
+Epoch #6 cost=3.249881
+Epoch #7 cost=3.249880
+Epoch #8 cost=3.249879
+Epoch #9 cost=3.249878
+** Start training **
+Epoch #0 cost=3.249826
+Epoch #1 cost=3.249875
+Epoch #2 cost=3.249874
+Epoch #3 cost=3.249873
+Epoch #4 cost=3.249872
+Epoch #5 cost=3.249871
+Epoch #6 cost=3.249871
+Epoch #7 cost=3.249870
+Epoch #8 cost=3.249869
+Epoch #9 cost=3.249868
+** Start training **
+Epoch #0 cost=3.249810
+Epoch #1 cost=3.249859
+Epoch #2 cost=3.249858
+Epoch #3 cost=3.249857
+Epoch #4 cost=3.249856
+Epoch #5 cost=3.249855
+Epoch #6 cost=3.249854
+Epoch #7 cost=3.249853
+Epoch #8 cost=3.249853
+Epoch #9 cost=3.249851
+** Start training **
+Epoch #0 cost=3.249838
+Epoch #1 cost=3.249886
+Epoch #2 cost=3.249885
+Epoch #3 cost=3.249885
+Epoch #4 cost=3.249884
+Epoch #5 cost=3.249882
+Epoch #6 cost=3.249882
+Epoch #7 cost=3.249881
+Epoch #8 cost=3.249880
+Epoch #9 cost=3.249880
+** Start training **
+Epoch #0 cost=3.249778
+Epoch #1 cost=3.249823
+Epoch #2 cost=3.249823
+Epoch #3 cost=3.249821
+Epoch #4 cost=3.249821
+Epoch #5 cost=3.249820
+Epoch #6 cost=3.249819
+Epoch #7 cost=3.249818
+Epoch #8 cost=3.249817
+Epoch #9 cost=3.249816
+** Start training **
+Epoch #0 cost=3.249510
+Epoch #1 cost=3.249553
+Epoch #2 cost=3.249552
+Epoch #3 cost=3.249551
+Epoch #4 cost=3.249551
+Epoch #5 cost=3.249550
+Epoch #6 cost=3.249549
+Epoch #7 cost=3.249548
+Epoch #8 cost=3.249548
+Epoch #9 cost=3.249547
+** Start training **
+Epoch #0 cost=3.250507
+Epoch #1 cost=3.250457
+Epoch #2 cost=3.250458
+Epoch #3 cost=3.250459
+Epoch #4 cost=3.250460
+Epoch #5 cost=3.250461
+Epoch #6 cost=3.250462
+Epoch #7 cost=3.250463
+Epoch #8 cost=3.250464
+Epoch #9 cost=3.250466
+Nodes keep percentage is :  0.14999999999999925
+** Start training **
+Epoch #0 cost=3.249894
+Epoch #1 cost=3.249889
+Epoch #2 cost=3.249888
+Epoch #3 cost=3.249887
+Epoch #4 cost=3.249886
+Epoch #5 cost=3.249885
+Epoch #6 cost=3.249884
+Epoch #7 cost=3.249883
+Epoch #8 cost=3.249882
+Epoch #9 cost=3.249881
+** Start training **
+Epoch #0 cost=3.249892
+Epoch #1 cost=3.249886
+Epoch #2 cost=3.249885
+Epoch #3 cost=3.249885
+Epoch #4 cost=3.249884
+Epoch #5 cost=3.249882
+Epoch #6 cost=3.249882
+Epoch #7 cost=3.249881
+Epoch #8 cost=3.249880
+Epoch #9 cost=3.249879
+** Start training **
+Epoch #0 cost=3.249897
+Epoch #1 cost=3.249892
+Epoch #2 cost=3.249891
+Epoch #3 cost=3.249890
+Epoch #4 cost=3.249889
+Epoch #5 cost=3.249888
+Epoch #6 cost=3.249887
+Epoch #7 cost=3.249887
+Epoch #8 cost=3.249886
+Epoch #9 cost=3.249885
+** Start training **
+Epoch #0 cost=3.249909
+Epoch #1 cost=3.249903
+Epoch #2 cost=3.249902
+Epoch #3 cost=3.249902
+Epoch #4 cost=3.249900
+Epoch #5 cost=3.249900
+Epoch #6 cost=3.249899
+Epoch #7 cost=3.249898
+Epoch #8 cost=3.249897
+Epoch #9 cost=3.249897
+** Start training **
+Epoch #0 cost=3.249901
+Epoch #1 cost=3.249896
+Epoch #2 cost=3.249895
+Epoch #3 cost=3.249894
+Epoch #4 cost=3.249893
+Epoch #5 cost=3.249892
+Epoch #6 cost=3.249891
+Epoch #7 cost=3.249891
+Epoch #8 cost=3.249890
+Epoch #9 cost=3.249889
+** Start training **
+Epoch #0 cost=3.249885
+Epoch #1 cost=3.249879
+Epoch #2 cost=3.249878
+Epoch #3 cost=3.249878
+Epoch #4 cost=3.249876
+Epoch #5 cost=3.249875
+Epoch #6 cost=3.249874
+Epoch #7 cost=3.249874
+Epoch #8 cost=3.249873
+Epoch #9 cost=3.249872
+** Start training **
+Epoch #0 cost=3.249910
+Epoch #1 cost=3.249905
+Epoch #2 cost=3.249904
+Epoch #3 cost=3.249903
+Epoch #4 cost=3.249902
+Epoch #5 cost=3.249901
+Epoch #6 cost=3.249901
+Epoch #7 cost=3.249900
+Epoch #8 cost=3.249899
+Epoch #9 cost=3.249898
+** Start training **
+Epoch #0 cost=3.249854
+Epoch #1 cost=3.249848
+Epoch #2 cost=3.249847
+Epoch #3 cost=3.249846
+Epoch #4 cost=3.249845
+Epoch #5 cost=3.249844
+Epoch #6 cost=3.249843
+Epoch #7 cost=3.249842
+Epoch #8 cost=3.249841
+Epoch #9 cost=3.249840
+** Start training **
+Epoch #0 cost=3.249579
+Epoch #1 cost=3.249573
+Epoch #2 cost=3.249572
+Epoch #3 cost=3.249571
+Epoch #4 cost=3.249571
+Epoch #5 cost=3.249570
+Epoch #6 cost=3.249569
+Epoch #7 cost=3.249568
+Epoch #8 cost=3.249568
+Epoch #9 cost=3.249567
+** Start training **
+Epoch #0 cost=3.250435
+Epoch #1 cost=3.250436
+Epoch #2 cost=3.250437
+Epoch #3 cost=3.250438
+Epoch #4 cost=3.250439
+Epoch #5 cost=3.250440
+Epoch #6 cost=3.250441
+Epoch #7 cost=3.250442
+Epoch #8 cost=3.250443
+Epoch #9 cost=3.250444
+Nodes keep percentage is :  0.0999999999999992
+** Start training **
+Epoch #0 cost=3.249932
+Epoch #1 cost=3.249938
+Epoch #2 cost=3.249936
+Epoch #3 cost=3.249936
+Epoch #4 cost=3.249934
+Epoch #5 cost=3.249933
+Epoch #6 cost=3.249932
+Epoch #7 cost=3.249931
+Epoch #8 cost=3.249930
+Epoch #9 cost=3.249930
+** Start training **
+Epoch #0 cost=3.249931
+Epoch #1 cost=3.249936
+Epoch #2 cost=3.249936
+Epoch #3 cost=3.249935
+Epoch #4 cost=3.249933
+Epoch #5 cost=3.249932
+Epoch #6 cost=3.249931
+Epoch #7 cost=3.249930
+Epoch #8 cost=3.249929
+Epoch #9 cost=3.249928
+** Start training **
+Epoch #0 cost=3.249933
+Epoch #1 cost=3.249939
+Epoch #2 cost=3.249939
+Epoch #3 cost=3.249938
+Epoch #4 cost=3.249937
+Epoch #5 cost=3.249936
+Epoch #6 cost=3.249935
+Epoch #7 cost=3.249934
+Epoch #8 cost=3.249933
+Epoch #9 cost=3.249932
+** Start training **
+Epoch #0 cost=3.249941
+Epoch #1 cost=3.249947
+Epoch #2 cost=3.249946
+Epoch #3 cost=3.249944
+Epoch #4 cost=3.249943
+Epoch #5 cost=3.249943
+Epoch #6 cost=3.249942
+Epoch #7 cost=3.249941
+Epoch #8 cost=3.249940
+Epoch #9 cost=3.249939
+** Start training **
+Epoch #0 cost=3.249936
+Epoch #1 cost=3.249941
+Epoch #2 cost=3.249940
+Epoch #3 cost=3.249940
+Epoch #4 cost=3.249939
+Epoch #5 cost=3.249938
+Epoch #6 cost=3.249937
+Epoch #7 cost=3.249936
+Epoch #8 cost=3.249935
+Epoch #9 cost=3.249934
+** Start training **
+Epoch #0 cost=3.249923
+Epoch #1 cost=3.249929
+Epoch #2 cost=3.249928
+Epoch #3 cost=3.249927
+Epoch #4 cost=3.249926
+Epoch #5 cost=3.249924
+Epoch #6 cost=3.249923
+Epoch #7 cost=3.249922
+Epoch #8 cost=3.249922
+Epoch #9 cost=3.249920
+** Start training **
+Epoch #0 cost=3.249939
+Epoch #1 cost=3.249945
+Epoch #2 cost=3.249944
+Epoch #3 cost=3.249943
+Epoch #4 cost=3.249943
+Epoch #5 cost=3.249942
+Epoch #6 cost=3.249940
+Epoch #7 cost=3.249940
+Epoch #8 cost=3.249939
+Epoch #9 cost=3.249938
+** Start training **
+Epoch #0 cost=3.249894
+Epoch #1 cost=3.249898
+Epoch #2 cost=3.249897
+Epoch #3 cost=3.249897
+Epoch #4 cost=3.249896
+Epoch #5 cost=3.249895
+Epoch #6 cost=3.249893
+Epoch #7 cost=3.249892
+Epoch #8 cost=3.249891
+Epoch #9 cost=3.249890
+** Start training **
+Epoch #0 cost=3.249610
+Epoch #1 cost=3.249614
+Epoch #2 cost=3.249613
+Epoch #3 cost=3.249612
+Epoch #4 cost=3.249611
+Epoch #5 cost=3.249610
+Epoch #6 cost=3.249609
+Epoch #7 cost=3.249608
+Epoch #8 cost=3.249607
+Epoch #9 cost=3.249606
+** Start training **
+Epoch #0 cost=3.250387
+Epoch #1 cost=3.250378
+Epoch #2 cost=3.250379
+Epoch #3 cost=3.250381
+Epoch #4 cost=3.250381
+Epoch #5 cost=3.250382
+Epoch #6 cost=3.250384
+Epoch #7 cost=3.250385
+Epoch #8 cost=3.250386
+Epoch #9 cost=3.250387
+Nodes keep percentage is :  0.049999999999999156
+** Start training **
+Epoch #0 cost=3.249947
+Epoch #1 cost=3.249946
+Epoch #2 cost=3.249945
+Epoch #3 cost=3.249943
+Epoch #4 cost=3.249942
+Epoch #5 cost=3.249941
+Epoch #6 cost=3.249940
+Epoch #7 cost=3.249939
+Epoch #8 cost=3.249938
+Epoch #9 cost=3.249937
+** Start training **
+Epoch #0 cost=3.249945
+Epoch #1 cost=3.249945
+Epoch #2 cost=3.249944
+Epoch #3 cost=3.249943
+Epoch #4 cost=3.249941
+Epoch #5 cost=3.249940
+Epoch #6 cost=3.249939
+Epoch #7 cost=3.249938
+Epoch #8 cost=3.249937
+Epoch #9 cost=3.249936
+** Start training **
+Epoch #0 cost=3.249947
+Epoch #1 cost=3.249948
+Epoch #2 cost=3.249947
+Epoch #3 cost=3.249945
+Epoch #4 cost=3.249944
+Epoch #5 cost=3.249943
+Epoch #6 cost=3.249942
+Epoch #7 cost=3.249941
+Epoch #8 cost=3.249941
+Epoch #9 cost=3.249939
+** Start training **
+Epoch #0 cost=3.249954
+Epoch #1 cost=3.249954
+Epoch #2 cost=3.249953
+Epoch #3 cost=3.249952
+Epoch #4 cost=3.249951
+Epoch #5 cost=3.249950
+Epoch #6 cost=3.249949
+Epoch #7 cost=3.249948
+Epoch #8 cost=3.249947
+Epoch #9 cost=3.249946
+** Start training **
+Epoch #0 cost=3.249949
+Epoch #1 cost=3.249949
+Epoch #2 cost=3.249947
+Epoch #3 cost=3.249946
+Epoch #4 cost=3.249946
+Epoch #5 cost=3.249944
+Epoch #6 cost=3.249943
+Epoch #7 cost=3.249942
+Epoch #8 cost=3.249941
+Epoch #9 cost=3.249940
+** Start training **
+Epoch #0 cost=3.249938
+Epoch #1 cost=3.249938
+Epoch #2 cost=3.249937
+Epoch #3 cost=3.249936
+Epoch #4 cost=3.249935
+Epoch #5 cost=3.249933
+Epoch #6 cost=3.249932
+Epoch #7 cost=3.249931
+Epoch #8 cost=3.249930
+Epoch #9 cost=3.249929
+** Start training **
+Epoch #0 cost=3.249952
+Epoch #1 cost=3.249952
+Epoch #2 cost=3.249951
+Epoch #3 cost=3.249950
+Epoch #4 cost=3.249949
+Epoch #5 cost=3.249948
+Epoch #6 cost=3.249947
+Epoch #7 cost=3.249946
+Epoch #8 cost=3.249945
+Epoch #9 cost=3.249944
+** Start training **
+Epoch #0 cost=3.249908
+Epoch #1 cost=3.249908
+Epoch #2 cost=3.249907
+Epoch #3 cost=3.249906
+Epoch #4 cost=3.249905
+Epoch #5 cost=3.249904
+Epoch #6 cost=3.249902
+Epoch #7 cost=3.249902
+Epoch #8 cost=3.249900
+Epoch #9 cost=3.249899
+** Start training **
+Epoch #0 cost=3.249623
+Epoch #1 cost=3.249622
+Epoch #2 cost=3.249621
+Epoch #3 cost=3.249620
+Epoch #4 cost=3.249619
+Epoch #5 cost=3.249618
+Epoch #6 cost=3.249617
+Epoch #7 cost=3.249616
+Epoch #8 cost=3.249615
+Epoch #9 cost=3.249614
+** Start training **
+Epoch #0 cost=3.250365
+Epoch #1 cost=3.250359
+Epoch #2 cost=3.250360
+Epoch #3 cost=3.250362
+Epoch #4 cost=3.250363
+Epoch #5 cost=3.250364
+Epoch #6 cost=3.250366
+Epoch #7 cost=3.250367
+Epoch #8 cost=3.250368
+Epoch #9 cost=3.250369

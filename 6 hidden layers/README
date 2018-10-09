@@ -1,0 +1,38 @@
+Update on 4 June :: Added support to run the models on GPU
+Update on 5 June :: Added a script to (automate) run all the models and log their results
+Update on 2 July :: Added new methodology to implement drop connect algorithm.
+
+***** Sparsity (Drop connect) on feed forward neural network for MNIST data.  *****
+
+  ** A brief overview of files present **
+
+Python code
+- In this folder, python code for the FFNN implemented using tensorflow with 6 hidden layers are present, and sparsity using drop connect is applied on them. Such a network will generally be called a 7 Layer network, counting in the output layer as well while classifying the size of network.
+
+- The codes are basically categorised into three parts:
+	- Drop connect algorithm applied over the complete network uniformly with weight retaining rate (keep percentage) ranging from 1 down to 0.05
+	  This will be a single file with the name 6layers.dropconnect.cv.py 
+	- Drop connect algorithm applied between individual hidden layers and also between hidden layer and output layer.
+	  The file names will be of the form dropconnect_layer<1-2>.py - The numbers here mean in front of which layer the dropconnect has been applied.
+	  If its a 3 layer network and the name is dropconnect_layer2.py. then this means that the dropconnect is between hidden layer 2 and 3.
+	  However if its a 2 layer network, then the same file name will correspond to dropconnect between hidden layer 2 and the output layer.
+	- Drop connect applied between the input layer and the first hidden layer. The name of the file is dropconnect_inputlayer.py
+
+
+Performance Comparision
+- The values for accuracy over the test and train data set and the cross validation results are saved (across the total 150 epochs) is present in the dl<*>accuracyTest<With/No>Retrain.csv, dl<*>accuracyTrain<With/No>Retrain.csv and dl<*>cvResult<With/No>Retrain.csv  respectively. dl<*> tells in front of which (hidden or input) layer is the dropconnect implemented. With Retrain or No Retrain tells if the results are with pruning and retraining or just pruning and no retraining. 
+- Run the plot.py code to generate the graphs corresponding to the values of accuracies.
+                                                                                                                                                                                                                                                                              p
+Hyper parameters used
+- Learning rate: 0.03
+- Epochs: 150
+- Batch size: 100
+
+
+Run the tensorflow model
+- First, copy the trained weights and bias values in csv format from the NoDropConnect folder into current folder. The model takes pretrained weights and then evaluate the network.  
+- To run the python code, simply execute it with a suitable python version (we used 3.5), without any need of an argument. Please note that some syntaxes might not be backward compatible in older releases of python.
+- Since the GPU is active, whichever operations are possible are mapped to the NVIDIA GPU (by default) present in the system. You can manually check which operations are performed on CPU/GPU by setting the variable log_device_placement to True in the tensorflow session.
+- You might want to run the python command and redirect the output using "&>" to a log file to review it later.
+- The code firstly downloads the MNIST data set and perform the classification on the same.
+
